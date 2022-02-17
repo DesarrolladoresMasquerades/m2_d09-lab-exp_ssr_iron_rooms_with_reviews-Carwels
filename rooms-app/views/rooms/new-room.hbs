@@ -1,0 +1,40 @@
+<h2> New Room</h2>
+
+<form action="/rooms/new-room" method="POST">
+
+<label for="name">
+Name:
+</label>
+<input type="text" name="name" />
+
+  <label for="email"> 
+    Description:
+  </label>
+     <input type="text" name="description"/>
+
+  <label for="img">
+    Image:
+  </label>
+    <input type="img" name="imgUrl" />
+
+  <label for="owner">
+    Owner:
+  </label>
+    <input type="text" name="owner"/>
+
+  <label for="reviews">
+    Reviews:
+  </label>
+    <input type="text" name="reviews"/>
+
+  <button type="submit"> Submit New Room</button>
+</form>
+
+
+<a href="/">
+  Back to index
+</a>
+
+{{#if errorMessage}}
+   {{errorMessage}}
+{{/if}}

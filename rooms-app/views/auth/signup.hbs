@@ -1,0 +1,44 @@
+<h2>New User</h2>
+
+
+<form action="/auth/signup" method="POST">
+
+<label for="username">
+Username:
+</label>
+<input type="text" name="username" placeholder="Username" />
+
+  <label for="email"> 
+    Email:
+  </label>
+     <input type="text" name="email" placeholder="Email" />
+  <label for="password">
+    Password:
+  </label>
+    <input type="password" name="password" placeholder="Password" />
+  <label for="fullName">
+    Full name:
+  </label>
+    <input type="text" name="fullName" placeholder="fullName" />
+
+   {{!-- <label>
+    SlackID:
+    <input type="text" name="slackID" placeholder="slackID" />
+  </label>
+
+   <label>
+    GoogleID:
+    <input type="text" name="googleID" placeholder="googleID" />
+  </label> --}}
+
+  <button type="submit"> Submit New User</button>
+</form>
+
+
+<a href="/">
+  Back to index
+</a>
+
+{{#if errorMessage}}
+   {{errorMessage}}
+{{/if}}
